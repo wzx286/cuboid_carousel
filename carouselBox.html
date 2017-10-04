@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>长方体轮播盒子</title>
+	<link rel="stylesheet" type="text/css" href="css/cuboid_carousel.css">
+</head>
+<body>
+<marquee><font color="red">按下↑↓→←键可调整视角</font></marquee>
+	<div  id="picBox" class="pic-box" >
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>			
+		</ul>
+	</div>
+	<div class="btn-area">
+		<div class="btn-i" onclick="moveTo(1)">1</div>
+		<div class="btn-i" onclick="moveTo(2)">2</div>
+		<div class="btn-i" onclick="moveTo(3)">3</div>
+		<div class="btn-i" onclick="moveTo(4)">4</div>
+		<div class="btn-i" onclick="doReset()">重置</div>
+	</div>
+	<script type="text/javascript" src="js/cuboid_carousel.js"></script>
+	<script type="text/javascript">
+		doReset();		
+	</script>
+</body>
+</html>
